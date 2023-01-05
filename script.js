@@ -22,6 +22,10 @@ function isPalindrome (str) {
     // - Remove non alpha
     // - Remove special char '_'
     const comp = revArray.join('').toLowerCase().replace(/\W/g, '').replaceAll('_', '');
-    
+    if(newStr === comp) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
